@@ -17,7 +17,7 @@ The translational PID ensures the robot follows a straight path without lateral 
 
 ## Tuning Process
 
-1. Push the robot laterally (left or right) to test its correction response.
+1. Push the robot laterally (left or right) to test its correction response. The robot *will not drive forward* during this step. This opmode is reused for the other PID steps, hence the name.
 2. Adjust the PID constants (`translationalPIDF`) in the **FollowerConstants** tab of FTC Dashboard.
     - **Goal**: Minimize oscillations while maintaining accuracy.
 
